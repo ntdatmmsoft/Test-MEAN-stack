@@ -3,26 +3,26 @@ const Schema = mongoose.Schema;
 
 // Define collection and schema
 let Student = new Schema({
-  student_name: {
-    type: String
-  },
-  student_email: {
-    type: String
-  },
-  section: {
-    type: String
-  },
-  subjects: {
-    type: Array
-  },
-  gender: {
-    type: String
-  },
-  dob: {
-    type: Date
-  }
+   student_name: {
+      type: String
+   },
+   student_email: {
+      type: String
+   },
+   section: {
+      type: String
+   },
+   subjects: {
+      type: Array
+   },
+   gender: {
+      type: String
+   },
+   dob: {
+      type: Date
+   }
 }, {
-  collection: 'Students'
+   collection: 'Students'
 })
 
 module.exports = mongoose.model('Student', Student)
